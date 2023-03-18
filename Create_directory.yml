@@ -1,10 +1,12 @@
 ---
  - hosts: localhost
    connection: local
+   vars_files:
+     - Mediawiki-Ansible-Automation-vars.yml
    tasks:
-   - name: including variables
-     include_vars:
-       file: https://github.com/sanjukk/Ansible_playbook_create_directory/blob/main/Mediawiki-Ansible-Automation-vars.yml
+#   - name: including variables
+ #    include_vars:
+  #     file: https://github.com/sanjukk/Ansible_playbook_create_directory/blob/main/Mediawiki-Ansible-Automation-vars.yml
 
    - name: Create a Mediawiki directory
      become: yes
