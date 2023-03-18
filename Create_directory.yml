@@ -4,7 +4,7 @@
    tasks:
    - name: including variables
      include_vars:
-       file: Mediawiki-Ansible-Automation-vars.yml
+       file: https://github.com/sanjukk/Ansible_playbook_create_directory/blob/main/Mediawiki-Ansible-Automation-vars.yml
 
    - name: Create a Mediawiki directory
      become: yes
